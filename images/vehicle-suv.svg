@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="SUV">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#eab308" stop-opacity=".35"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".55" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7c8aa0"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#64748b"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="610" cy="150" r="200" fill="url(#glow)"/>
+  <path d="M0 430 L110 340 L215 410 L340 305 L470 415 L585 345 L700 425 L800 375 V600 H0Z" fill="#131c2e"/>
+  <rect y="428" width="800" height="172" fill="#0b1220"/>
+  <ellipse cx="412" cy="444" rx="290" ry="13" fill="#000" opacity=".5"/>
+  <path d="M190 376 V290 Q190 252 226 250 H486 Q506 250 518 264 L556 316 L614 324 Q636 330 636 354 V376 Z" fill="url(#body)"/>
+  <path d="M222 266 H492 L538 312 H208 V282 Q208 266 222 266 Z" fill="url(#glass)"/>
+  <path d="M254 266 V312 M366 266 V312" stroke="#cbd5e1" stroke-width="7"/>
+  <path d="M366 312 V362 M254 312 V362" stroke="#94a3b8" stroke-width="2" opacity=".8"/>
+  <path d="M232 272 H480" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+  <path d="M228 241 H480" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 241 V250 M456 241 V250" stroke="#475569" stroke-width="5"/>
+  <path d="M190 356 H636 V376 H190 Z" fill="#334155"/>
+  <path d="M190 354 H636" stroke="#eab308" stroke-width="3" opacity=".9"/>
+  <path d="M388 330 H410 M290 330 H312" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M528 304 Q548 300 552 312 L534 314 Z" fill="#334155"/>
+  <path d="M622 332 H636 V346 H624 Z" fill="#fde047"/>
+  <path d="M190 296 H202 V322 H190 Z" fill="#ef4444"/>
+  <circle cx="292" cy="398" r="54" fill="#334155"/><circle cx="542" cy="398" r="54" fill="#334155"/>
+  <g><circle cx="292" cy="398" r="48" fill="#111827"/><circle cx="292" cy="398" r="27" fill="url(#rim)"/><circle cx="292" cy="398" r="8" fill="#475569"/></g>
+  <g><circle cx="542" cy="398" r="48" fill="#111827"/><circle cx="542" cy="398" r="27" fill="url(#rim)"/><circle cx="542" cy="398" r="8" fill="#475569"/></g>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#faf9f6">SUV</text>
+  <rect x="370" y="538" width="60" height="3" rx="1.5" fill="#eab308"/>
+</svg>

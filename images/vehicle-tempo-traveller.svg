@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Tempo Traveller">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#eab308" stop-opacity=".35"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".55" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7c8aa0"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#64748b"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="610" cy="150" r="200" fill="url(#glow)"/>
+  <path d="M0 430 L110 340 L215 410 L340 305 L470 415 L585 345 L700 425 L800 375 V600 H0Z" fill="#131c2e"/>
+  <rect y="428" width="800" height="172" fill="#0b1220"/>
+  <ellipse cx="410" cy="436" rx="320" ry="13" fill="#000" opacity=".5"/>
+  <path d="M120 394 V226 Q120 206 142 206 H566 Q586 206 598 222 L650 300 Q668 314 668 344 V394 Z" fill="url(#body)"/>
+  <g fill="url(#glass)">
+    <rect x="146" y="232" width="88" height="62" rx="8"/><rect x="246" y="232" width="88" height="62" rx="8"/>
+    <rect x="346" y="232" width="88" height="62" rx="8"/><rect x="446" y="232" width="88" height="62" rx="8"/>
+    <path d="M550 232 H570 Q578 232 584 240 L624 296 H550 Z"/>
+  </g>
+  <path d="M124 330 H664" stroke="#eab308" stroke-width="3" opacity=".9"/>
+  <path d="M124 308 H540" stroke="#94a3b8" stroke-width="2" opacity=".6"/>
+  <path d="M652 330 H668 V344 H656 Z" fill="#fde047"/>
+  <path d="M120 330 H134 V348 H120 Z" fill="#ef4444"/>
+  <g><circle cx="250" cy="400" r="46" fill="#0b1220"/><circle cx="250" cy="400" r="38" fill="#111827"/><circle cx="250" cy="400" r="22" fill="url(#rim)"/><circle cx="250" cy="400" r="7" fill="#475569"/></g>
+  <g><circle cx="560" cy="400" r="46" fill="#0b1220"/><circle cx="560" cy="400" r="38" fill="#111827"/><circle cx="560" cy="400" r="22" fill="url(#rim)"/><circle cx="560" cy="400" r="7" fill="#475569"/></g>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#faf9f6">Tempo Traveller</text>
+  <rect x="370" y="538" width="60" height="3" rx="1.5" fill="#eab308"/>
+</svg>

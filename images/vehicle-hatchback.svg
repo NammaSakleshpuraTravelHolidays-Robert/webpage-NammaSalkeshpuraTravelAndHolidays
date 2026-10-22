@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Hatchback">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#eab308" stop-opacity=".35"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".55" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7c8aa0"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#64748b"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="610" cy="150" r="200" fill="url(#glow)"/>
+  <path d="M0 430 L110 340 L215 410 L340 305 L470 415 L585 345 L700 425 L800 375 V600 H0Z" fill="#131c2e"/>
+  <rect y="428" width="800" height="172" fill="#0b1220"/>
+  <ellipse cx="410" cy="436" rx="250" ry="13" fill="#000" opacity=".5"/>
+  <path d="M232 392 V338 Q232 330 238 322 L266 270 Q272 262 284 262 H420 Q436 262 446 272 L512 330 L586 342 Q614 350 616 378 V392 Z" fill="url(#body)"/>
+  <path d="M282 276 L254 328 H500 L436 276 Z" fill="url(#glass)"/>
+  <path d="M352 276 V328" stroke="#cbd5e1" stroke-width="5"/>
+  <path d="M288 278 H430" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+  <path d="M236 376 H614" stroke="#eab308" stroke-width="3" opacity=".9"/>
+  <path d="M372 346 H392 M450 346 H470" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M598 354 H614 V364 H602 Z" fill="#fde047"/>
+  <path d="M232 342 H244 V360 H232 Z" fill="#ef4444"/>
+  <g><circle cx="305" cy="398" r="43" fill="#0b1220"/><circle cx="305" cy="398" r="35" fill="#111827"/><circle cx="305" cy="398" r="20" fill="url(#rim)"/><circle cx="305" cy="398" r="6" fill="#475569"/></g>
+  <g><circle cx="525" cy="398" r="43" fill="#0b1220"/><circle cx="525" cy="398" r="35" fill="#111827"/><circle cx="525" cy="398" r="20" fill="url(#rim)"/><circle cx="525" cy="398" r="6" fill="#475569"/></g>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#faf9f6">Hatchback</text>
+  <rect x="370" y="538" width="60" height="3" rx="1.5" fill="#eab308"/>
+</svg>

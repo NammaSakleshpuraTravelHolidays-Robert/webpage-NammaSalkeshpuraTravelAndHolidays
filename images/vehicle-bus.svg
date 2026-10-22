@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Bus">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#eab308" stop-opacity=".35"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".55" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7c8aa0"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#64748b"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="610" cy="150" r="200" fill="url(#glow)"/>
+  <path d="M0 430 L110 340 L215 410 L340 305 L470 415 L585 345 L700 425 L800 375 V600 H0Z" fill="#131c2e"/>
+  <rect y="428" width="800" height="172" fill="#0b1220"/>
+  <ellipse cx="400" cy="436" rx="340" ry="13" fill="#000" opacity=".5"/>
+  <path d="M70 394 V212 Q70 190 94 190 H706 Q730 190 730 212 V394 Z" fill="url(#body)"/>
+  <g fill="url(#glass)">
+    <rect x="94" y="216" width="68" height="66" rx="7"/><rect x="174" y="216" width="68" height="66" rx="7"/>
+    <rect x="254" y="216" width="68" height="66" rx="7"/><rect x="334" y="216" width="68" height="66" rx="7"/>
+    <rect x="414" y="216" width="68" height="66" rx="7"/><rect x="494" y="216" width="68" height="66" rx="7"/>
+    <rect x="574" y="216" width="44" height="150" rx="7"/><rect x="636" y="210" width="78" height="96" rx="9"/>
+  </g>
+  <path d="M74 336 H726" stroke="#eab308" stroke-width="4" opacity=".9"/>
+  <path d="M74 296 H560" stroke="#94a3b8" stroke-width="2" opacity=".6"/>
+  <path d="M706 346 H730 V362 H712 Z" fill="#fde047"/>
+  <path d="M70 346 H86 V362 H70 Z" fill="#ef4444"/>
+  <g><circle cx="215" cy="400" r="46" fill="#0b1220"/><circle cx="215" cy="400" r="38" fill="#111827"/><circle cx="215" cy="400" r="22" fill="url(#rim)"/><circle cx="215" cy="400" r="7" fill="#475569"/></g>
+  <g><circle cx="590" cy="400" r="46" fill="#0b1220"/><circle cx="590" cy="400" r="38" fill="#111827"/><circle cx="590" cy="400" r="22" fill="url(#rim)"/><circle cx="590" cy="400" r="7" fill="#475569"/></g>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#faf9f6">Bus</text>
+  <rect x="370" y="538" width="60" height="3" rx="1.5" fill="#eab308"/>
+</svg>

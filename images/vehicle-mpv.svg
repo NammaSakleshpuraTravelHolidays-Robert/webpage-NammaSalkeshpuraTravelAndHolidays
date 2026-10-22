@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="MPV">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#eab308" stop-opacity=".35"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".55" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7c8aa0"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#64748b"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="610" cy="150" r="200" fill="url(#glow)"/>
+  <path d="M0 430 L110 340 L215 410 L340 305 L470 415 L585 345 L700 425 L800 375 V600 H0Z" fill="#131c2e"/>
+  <rect y="428" width="800" height="172" fill="#0b1220"/>
+  <ellipse cx="410" cy="436" rx="300" ry="13" fill="#000" opacity=".5"/>
+  <path d="M170 392 V296 Q170 252 204 248 H466 Q494 248 514 266 L592 322 Q646 332 648 364 V392 Z" fill="url(#body)"/>
+  <path d="M206 264 H470 Q486 264 500 276 L556 318 H206 Z" fill="url(#glass)"/>
+  <path d="M300 264 V318 M392 264 V318 M474 266 V318" stroke="#cbd5e1" stroke-width="6"/>
+  <path d="M300 318 V378 M474 318 V378" stroke="#94a3b8" stroke-width="2" opacity=".8"/>
+  <path d="M212 270 H464" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+  <path d="M174 378 H646" stroke="#eab308" stroke-width="3" opacity=".9"/>
+  <path d="M318 338 H338 M410 338 H430" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M632 350 H648 V362 H636 Z" fill="#fde047"/>
+  <path d="M170 316 H182 V340 H170 Z" fill="#ef4444"/>
+  <g><circle cx="275" cy="400" r="44" fill="#0b1220"/><circle cx="275" cy="400" r="36" fill="#111827"/><circle cx="275" cy="400" r="21" fill="url(#rim)"/><circle cx="275" cy="400" r="6" fill="#475569"/></g>
+  <g><circle cx="545" cy="400" r="44" fill="#0b1220"/><circle cx="545" cy="400" r="36" fill="#111827"/><circle cx="545" cy="400" r="21" fill="url(#rim)"/><circle cx="545" cy="400" r="6" fill="#475569"/></g>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#faf9f6">MPV</text>
+  <rect x="370" y="538" width="60" height="3" rx="1.5" fill="#eab308"/>
+</svg>

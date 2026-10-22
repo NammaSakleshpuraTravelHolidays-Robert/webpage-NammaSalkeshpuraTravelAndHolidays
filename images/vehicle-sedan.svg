@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Sedan">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e293b"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#eab308" stop-opacity=".35"/><stop offset="1" stop-color="#eab308" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset=".55" stop-color="#cbd5e1"/><stop offset="1" stop-color="#7c8aa0"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#475569"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+    <radialGradient id="rim" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#f1f5f9"/><stop offset="1" stop-color="#64748b"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="610" cy="150" r="200" fill="url(#glow)"/>
+  <path d="M0 430 L110 340 L215 410 L340 305 L470 415 L585 345 L700 425 L800 375 V600 H0Z" fill="#131c2e"/>
+  <rect y="428" width="800" height="172" fill="#0b1220"/>
+  <ellipse cx="410" cy="436" rx="290" ry="13" fill="#000" opacity=".5"/>
+  <path d="M176 392 Q174 358 198 352 L250 344 L300 292 Q312 278 336 278 H452 Q480 278 496 294 L532 340 L596 346 Q628 352 630 380 V392 Z" fill="url(#body)"/>
+  <path d="M318 294 L292 338 H526 L492 302 Q484 292 464 292 H338 Z" fill="url(#glass)"/>
+  <path d="M410 292 V338" stroke="#cbd5e1" stroke-width="5"/>
+  <path d="M322 294 H462 L492 322" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>
+  <path d="M180 378 H628" stroke="#eab308" stroke-width="3" opacity=".9"/>
+  <path d="M345 352 H365 M440 352 H460" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+  <path d="M612 356 H630 V366 H616 Z" fill="#fde047"/>
+  <path d="M176 358 H190 V370 H176 Z" fill="#ef4444"/>
+  <g><circle cx="282" cy="398" r="43" fill="#0b1220"/><circle cx="282" cy="398" r="35" fill="#111827"/><circle cx="282" cy="398" r="20" fill="url(#rim)"/><circle cx="282" cy="398" r="6" fill="#475569"/></g>
+  <g><circle cx="530" cy="398" r="43" fill="#0b1220"/><circle cx="530" cy="398" r="35" fill="#111827"/><circle cx="530" cy="398" r="20" fill="url(#rim)"/><circle cx="530" cy="398" r="6" fill="#475569"/></g>
+  <text x="400" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#faf9f6">Sedan</text>
+  <rect x="370" y="538" width="60" height="3" rx="1.5" fill="#eab308"/>
+</svg>
