@@ -171,7 +171,7 @@
   <main class="flex-grow" id="top">
 
     <!-- ================= HERO ================= -->
-    <section class="relative min-h-screen flex items-center overflow-hidden" aria-labelledby="hero-title">
+    <section class="hero-section relative flex items-center overflow-hidden" aria-labelledby="hero-title">
       <div class="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
         <div class="absolute inset-0" id="hero-images"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-luxury-50/10 via-transparent to-luxury-50/10 dark:from-slate-950/65 dark:via-slate-950/45 dark:to-slate-950/80"></div>
@@ -198,7 +198,7 @@
             Need a scenic stop, a local recommendation, or someone to take your picture? Your ride comes with a helpful local companion, so you can explore at your own pace.
           </p>
 
-          <div class="reveal flex flex-wrap items-center justify-center gap-4 mb-8" style="--delay: 0.35s">
+          <div class="hero-actions reveal flex flex-wrap items-center justify-center gap-4 mb-8" style="--delay: 0.35s">
             <a href="#contact" class="btn btn-gold px-8 py-3.5">Let's Plan Your Trip</a>
             <a href="#experience" class="btn btn-hero-outline px-8 py-3.5">Meet Your Travel Experience</a>
           </div>
@@ -210,7 +210,7 @@
             <button type="submit" class="btn btn-gold px-6 py-3 whitespace-nowrap">Find My Ride</button>
           </form>
 
-          <div class="reveal flex flex-wrap items-center justify-center gap-4" style="--delay: 0.45s">
+          <div class="hero-trust reveal flex flex-wrap items-center justify-center gap-4" style="--delay: 0.45s">
             <div class="trust-pill"><svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>Local Companion</span></div>
             <div class="trust-pill"><svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>Photo Stops</span></div>
             <div class="trust-pill"><svg class="w-5 h-5 text-gold-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg><span>Practical Help</span></div>
@@ -258,6 +258,83 @@
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
           </a>
         </div>
+      </div>
+    </section>
+
+    <section class="section tours-section" id="tours" aria-labelledby="tours-title">
+      <div class="container-luxury">
+        <header class="tours-intro reveal">
+          <img src="images/road-trip-to-sakleshpur.jpg" alt="A winding road through green hills in Sakleshpur" width="1274" height="768" loading="lazy" decoding="async">
+          <div class="tours-intro-copy">
+            <h2 id="tours-title">Sakleshpur Sightseeing &amp; Customised Cab Tours</h2>
+            <p class="tours-intro-tagline">Scenic journeys. Flexible plans. Memories to take home.</p>
+            <p>From scenic viewpoints and waterfalls to historic temples and peaceful hill escapes, choose a journey that suits your interests.</p>
+            <div class="tours-actions">
+              <a href="#contact" class="btn btn-gold" data-tour-quote>Plan My Trip</a>
+              <a href="#suggested-routes" class="btn tours-intro-link">Explore Suggested Routes <span aria-hidden="true">&darr;</span></a>
+            </div>
+          </div>
+        </header>
+
+        <div class="tours-overview reveal" id="suggested-routes">
+          <h3 class="section-title">Your journey starts with a little inspiration.</h3>
+          <p>Our suggested routes are a starting point for planning your trip. You're free to customise your itinerary, choose your preferred stops, and explore at your own pace. Share what you have in mind, and we'll help you plan a journey around your preferences.</p>
+          <p class="tours-closing">You choose the experiences. We take care of the drive.</p>
+        </div>
+
+        <div id="tour-routes" class="tour-grid"></div>
+        <noscript><p>For all six suggested routes and preferred stops, please enable JavaScript or <a href="tel:+918277377955">call +91 82773 77955</a> to discuss your trip.</p></noscript>
+
+        <section id="trip-planner" class="trip-planner" aria-labelledby="trip-planner-title" hidden>
+          <div class="trip-planner-heading">
+            <div>
+              <p class="tour-eyebrow">Your preferred journey</p>
+              <h3 id="trip-planner-title" class="section-title" tabindex="-1"></h3>
+              <p id="trip-planner-copy"></p>
+            </div>
+            <p id="trip-selection-count" role="status" aria-live="polite" aria-atomic="true"></p>
+          </div>
+          <fieldset>
+            <legend class="label">Preferred stops</legend>
+            <div class="tours-actions trip-selection-actions">
+              <button type="button" class="tour-text-action" id="trip-select-all">Select all</button>
+              <button type="button" class="tour-text-action" id="trip-clear-stops">Clear selection</button>
+            </div>
+            <div id="trip-stops" class="trip-stops"></div>
+          </fieldset>
+          <label for="trip-requests" class="label">Anything you'd like to add or change? (Optional)</label>
+          <textarea id="trip-requests" class="input-field" rows="3" maxlength="2000" placeholder="Your must-visit places, more time for photography, a relaxed pace..."></textarea>
+          <p class="trip-estimate" id="trip-estimate"></p>
+          <p>Preferred stops are a starting point, not a confirmed itinerary.</p>
+          <p class="tour-charge-note">Toll and parking charges are payable separately and are not included in the cab fare.</p>
+          <div class="tours-actions">
+            <a href="#contact" id="trip-enquire" data-booking-type="outstation" class="btn btn-gold">Continue to Enquiry</a>
+            <a id="trip-whatsapp" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Continue on WhatsApp <span aria-hidden="true">&nearr;</span></a>
+          </div>
+        </section>
+
+        <section class="tours-quote reveal" aria-labelledby="tours-quote-title">
+          <p class="tour-eyebrow">Cab Fares &amp; Trip Quotes</p>
+          <h3 id="tours-quote-title" class="section-title">Your trip, your preferences, your personalised quote.</h3>
+          <p>Tell us your travel date, pickup location, number of passengers, and preferred route. We'll help you plan your sightseeing journey and provide a cab quote for your trip.</p>
+          <a href="#contact" class="btn btn-gold" data-tour-quote>Continue to Enquiry</a>
+          <div class="tour-notes">
+            <h4>A Few Things to Know</h4>
+            <ul>
+              <li>Distances are approximate and may vary depending on your pickup location and customised itinerary.</li>
+              <li>The listed attractions are suggested stops. Your final itinerary should account for travel time, time spent at each location, and access conditions.</li>
+              <li>Toll and parking charges are payable separately and are not included in the cab fare. Thank you for your understanding.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="tours-custom reveal" aria-labelledby="tours-custom-title">
+          <p class="tour-eyebrow">Have a Different Journey in Mind?</p>
+          <h3 id="tours-custom-title" class="section-title">Let's plan it your way.</h3>
+          <p>These routes are suggestions, not fixed packages. Whether you'd like to add a destination, skip a stop, or combine selected experiences, we're happy to help you customise your trip.</p>
+          <p>Share your travel plans. Let's turn them into a memorable journey.</p>
+          <a href="#contact" class="btn btn-outline" data-tour-quote>Customise My Trip</a>
+        </section>
       </div>
     </section>
 
@@ -329,9 +406,9 @@
       <img src="images/cta-roads.png" alt="A scenic road seen from a car window" class="cta-fade-image" style="animation-delay:-6s" loading="lazy" decoding="async">
       <div class="cta-banner-veil" aria-hidden="true"></div>
       <div class="container-luxury relative z-10 cta-content">
-        <h2 id="cta-title" class="font-display text-2xl sm:text-4xl font-medium text-white">Ready to explore Sakleshpur the right way?</h2>
-        <p class="text-luxury-200 mt-3 mb-6">Tell us your plans and let us take care of the rest.</p>
-        <a href="#contact" class="btn btn-gold px-8 py-3.5">Plan My Ride</a>
+        <h2 id="cta-title" class="reveal font-display text-2xl sm:text-4xl font-medium text-white" style="--delay: 0s">Ready to explore Sakleshpur the right way?</h2>
+        <p class="reveal text-luxury-200 mt-3 mb-6" style="--delay: .12s">Tell us your plans and let us take care of the rest.</p>
+        <a href="#contact" class="reveal btn btn-gold px-8 py-3.5" style="--delay: .24s">Plan My Ride</a>
       </div>
     </section>
 
@@ -523,9 +600,18 @@
                   </div>
                 </fieldset>
 
+                <div id="trip-summary-panel" hidden>
+                  <p class="label">Selected trip</p>
+                  <input type="hidden" id="trip-summary" name="tripPreferences" disabled>
+                  <div class="tours-actions">
+                    <a href="#trip-planner" class="tour-text-action">Edit trip</a>
+                    <button type="button" id="trip-remove" class="tour-text-action">Remove trip</button>
+                  </div>
+                </div>
+
                 <div>
-                  <label for="message" class="label">Additional Requirements</label>
-                  <textarea id="message" name="message" rows="4" class="input-field resize-none" placeholder="Special requests: child seat, wheelchair accessible, specific route preferences, multiple stops, etc."></textarea>
+                  <label for="message" class="label">Your message, concerns &amp; customisations</label>
+                  <textarea id="message" name="message" rows="8" class="input-field" placeholder="Your trip plans, special requests, accessibility needs, preferred stops, or other concerns..."></textarea>
                 </div>
 
                 <!-- Honeypot: bots fill it, people never see it -->
@@ -592,6 +678,7 @@
           <ul class="space-y-3" role="list">
             <li><a href="#top" class="text-luxury-400 hover:text-gold-400 text-sm">Home</a></li>
             <li><a href="#fleet" class="text-luxury-400 hover:text-gold-400 text-sm">Rides</a></li>
+            <li><a href="#tours" class="text-luxury-400 hover:text-gold-400 text-sm">Tours</a></li>
             <li><a href="#experience" class="text-luxury-400 hover:text-gold-400 text-sm">Experiences</a></li>
             <li><a href="#how" class="text-luxury-400 hover:text-gold-400 text-sm">How It Works</a></li>
             <li><a href="#contact" class="text-luxury-400 hover:text-gold-400 text-sm">Contact</a></li>
