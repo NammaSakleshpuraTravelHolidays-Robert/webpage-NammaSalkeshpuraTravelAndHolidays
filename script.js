@@ -13,6 +13,75 @@ const CONTACT = {
 };
 const WHATSAPP_URL = `https://wa.me/${CONTACT.whatsappNumber}`;
 
+const TOUR_ROUTES = [
+  {
+    id: 'scenic', name: 'Scenic Hills, Temples & Waterfalls', distance: 130,
+    theme: 'A recommended choice for scenic views and trekking',
+    description: 'Enjoy a journey that brings together hill views, temple visits, trekking stops, and waterfalls. This route is a good choice for travellers who want a mix of sightseeing and outdoor exploration.',
+    stops: ['Bettada Bhairaveshwara Temple & viewpoints', 'Pandavara Betta', 'Ettina Bhuja trekking point', 'Manjehalli Abbi Falls', 'Manjarabad Fort', 'Devaramane viewpoint', 'Devarunda Temple'],
+    customise: "Let us know whether you'd prefer more time for trekking, photography, or relaxed sightseeing.",
+    cta: 'Plan My Scenic Trip',
+    photos: [
+      { src: 'images_tripData/Devaramane_viewpoint.jpg', alt: 'Green hills labelled Devaramane viewpoint' },
+      { src: 'images_tripData/ettinabuja.jpg', alt: 'Green peak labelled Ettina Buja' },
+      { src: 'images_tripData/pandavarabetta.jpg', alt: 'Hill trail labelled Pandavara Betta' },
+      { src: 'images_tripData/manjarabadFort.jpg', alt: 'Aerial view labelled Manjarabad Fort' },
+      { src: 'images_tripData/bettadabairaveshwara_temple.jpg', alt: 'Temple labelled Bettada Baireshwara Temple' },
+    ],
+    stopDescriptions: ['Make room for a temple visit and nearby views.', 'Include a hill stop in your scenic journey.', 'Prioritise a trekking stop if outdoor exploration is your focus.', 'Consider a waterfall stop alongside the hills.', 'Balance the landscape stops with a fort visit.', 'Leave space for viewpoint photography.', 'Include a temple visit at your preferred pace.'],
+  },
+  {
+    id: 'offbeat', name: 'Offbeat Trails & Nature Escapes', distance: 125,
+    theme: 'For travellers who enjoy exploring beyond the usual stops',
+    description: 'Take a different path with a route centred on grasslands, viewpoints, waterfalls, and hill trails. Combine relaxed sightseeing with a little adventure, choosing the stops that suit your interests and energy levels.',
+    stops: ['Hethur grasslands', 'Bisle Ghat viewpoints', 'Patla Hills trekking point', 'Mankanahalli Ridge Point', 'Mukanamane Waterfalls', 'Mallalli Waterfalls', 'Hosahalli shooting spot', 'Gavi Hills jeep safari'],
+    customise: 'Choose a gentler nature outing or include trekking and a jeep safari in your preferred itinerary.',
+    cta: 'Plan My Offbeat Escape',
+    photos: [
+      { src: 'images_tripData/BisileViewPoint.jpg', alt: 'Viewing platform over forested hills, labelled Bisle View Point' },
+      { src: 'images_tripData/Hethur_GreenMedows.jpg', alt: 'Open grasslands labelled Hethur Green Meadows' },
+      { src: 'images_tripData/patla_betta.jpg', alt: 'Green hill landscape labelled Patla Hills' },
+    ],
+    stopDescriptions: ['Shape a nature outing around open grassland views.', 'Make time for a viewpoint stop and photographs.', 'Include a hill trek if it suits your interests.', 'Consider a ridge viewpoint in your preferred itinerary.', 'Add a waterfall visit to your nature-focused plans.', 'Pair waterfall sightseeing with the stops you enjoy.', 'Make room for a scenic photography stop.', 'Ask about including a jeep safari in your preferred plan.'],
+  },
+  {
+    id: 'heritage', name: 'Heritage, Temples & Waterside Views', distance: 125,
+    theme: 'A thoughtful blend of culture, spirituality & leisure',
+    description: 'Plan a journey around historic temples, spiritual stops, and time by the water. This route brings together heritage sightseeing and a more relaxed pace, with a boating stop for those who wish to include it.',
+    stops: ['Belur Chennakeshava Temple', 'Yagachi Dam', 'Halebeedu Temple', 'Halebeedu Jain Temple', 'Yagachi Dam backwaters boating point', 'Pushpagiri Temple'],
+    customise: 'Spend more time exploring the temples or balance your visits with a leisurely waterside stop.',
+    cta: 'Plan My Heritage Tour',
+    stopDescriptions: ['Give this temple visit the time you would like.', 'Balance temple sightseeing with a waterside stop.', 'Make heritage exploration a focus of your journey.', 'Include a Jain temple visit in your cultural itinerary.', 'Ask about a boating stop when planning your visit.', 'Add a temple visit at a relaxed pace.'],
+  },
+  {
+    id: 'pilgrimage', name: 'Sacred Temples & Pilgrimage Journey', distance: 200,
+    theme: 'A journey centred on devotion and meaningful visits',
+    description: 'Bring together your preferred temple visits in a personalised pilgrimage itinerary. This suggested route includes spiritual destinations and a vintage-car museum stop for travellers who would like to add variety to their journey.',
+    stops: ['Dharmasthala Sri Manjunatha Temple', 'Sri Sadashiva Rudra Surya Temple', 'Sri Rama Kshethra', 'Manjusha Car Museum, Dharmasthala', 'Southadka Shri Mahaganapathi Temple', 'Kukke Sri Subramanya Swami Temple'],
+    customise: 'Tell us which temples are your priority so we can help plan the route around your preferred visits.',
+    cta: 'Plan My Pilgrimage Trip',
+    stopDescriptions: ['Prioritise this temple in your pilgrimage plans.', 'Make room for a meaningful temple visit.', 'Include this spiritual stop in your preferred journey.', 'Add variety with a vintage-car museum visit.', 'Include this temple among your priority visits.', 'Plan time around your preferred temple visit.'],
+  },
+  {
+    id: 'coorg', name: 'Coorg Scenic Getaway', distance: 250,
+    theme: 'Temples, waterfalls, viewpoints & memorable stops',
+    description: "Create your own Coorg sightseeing experience with a selection of temple visits, nature stops, and scenic viewpoints. Choose the places you're most excited to explore, from the Golden Temple to Raja's Seat or a Mandalpatti jeep safari.",
+    stops: ['Golden Temple', 'Dubare Elephant Camp', 'Kaveri Nisargadhama', 'Sri Omkareshwara Swami Temple', 'Abbey Falls', 'Madikeri Fort', "Raja's Seat", 'Mandalpatti jeep safari'],
+    customise: "Pick your must-visit attractions, and we'll help shape a route around them.",
+    cta: 'Plan My Coorg Getaway',
+    stopDescriptions: ['Make this temple a focus of your Coorg visit.', 'Include the camp in the places you would like to explore.', 'Add a nature stop to your preferred Coorg journey.', 'Balance nature sightseeing with a temple visit.', 'Include a waterfall in your sightseeing plans.', 'Make room for a heritage stop.', 'Prioritise a scenic viewpoint stop.', 'Ask about including a jeep safari in your plans.'],
+  },
+  {
+    id: 'chikkamagaluru', name: 'Chikkamagaluru Hills & Waterfalls', distance: 200,
+    theme: 'A scenic escape with peaks, lakes & nature stops',
+    description: 'Enjoy a sightseeing journey built around hill views, lakes, and waterfalls. This suggested route offers a mix of outdoor exploration and relaxed stops, with room to personalise the experience.',
+    stops: ['Mullayanagiri Peak', 'Hirekolale Lake', 'Baba Budangiri & plantation views', 'Jhari Waterfalls', 'Manikyadhara Waterfalls', 'Mahatma Gandhi Park'],
+    customise: 'Focus on hill viewpoints, waterfall visits, or a balanced mix of your favourite stops.',
+    cta: 'Plan My Chikkamagaluru Trip',
+    stopDescriptions: ['Build your hill-view plans around this peak.', 'Balance the hills with a lakeside stop.', 'Include hill and plantation views in your preferred journey.', 'Consider a waterfall visit alongside the hill stops.', 'Add another waterfall to your preferred selection.', 'Include a park stop for a more relaxed mix.'],
+  },
+];
+
 const HERO_IMAGES = [
   'images/road-trip-to-sakleshpur.jpg',
   'images/fort.jpg',
@@ -22,6 +91,7 @@ const HERO_IMAGES = [
 const NAV_LINKS = [
   { href: '#top', label: 'Home' },
   { href: '#fleet', label: 'Rides' },
+  { href: '#tours', label: 'Tours' },
   { href: '#experience', label: 'Experiences' },
   { href: '#how', label: 'How It Works' },
   { href: '#contact', label: 'Contact' },
@@ -338,7 +408,9 @@ function initNavbar() {
   };
   toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
   menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-  window.addEventListener('resize', () => { if (window.innerWidth >= 1024) setMenu(false); });
+  window.addEventListener('resize', () => {
+    setMenu(window.innerWidth < 1280 && toggle.getAttribute('aria-expanded') === 'true');
+  });
 
   // On small screens the bar slides away when scrolling down and returns when scrolling up.
   let lastScroll = 0;
@@ -348,7 +420,7 @@ function initNavbar() {
     ticking = true;
     requestAnimationFrame(() => {
       const current = window.scrollY;
-      const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+      const isDesktop = window.matchMedia('(min-width: 1280px)').matches;
       const menuOpen = toggle.getAttribute('aria-expanded') === 'true';
       navbar.classList.toggle('nav-hidden', !isDesktop && !menuOpen && current > lastScroll && current > 200);
       lastScroll = current;
@@ -365,9 +437,9 @@ function scrollToElement(target) {
 
   if (prefersReducedMotion) { window.scrollTo(0, end); return; }
 
-  const duration = 1200;
+  const duration = Math.min(1600, Math.max(900, Math.abs(end - start) * 0.45));
   const startTime = performance.now();
-  const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+  const ease = (t) => (t < 0.5 ? 16 * t ** 5 : 1 - Math.pow(-2 * t + 2, 5) / 2);
 
   const step = (now) => {
     const progress = Math.min((now - startTime) / duration, 1);
@@ -596,6 +668,7 @@ function initCarousel() {
     prevBtn.disabled = index === 0;
     nextBtn.disabled = index >= maxIndex;
     $$('button', dotsBox).forEach((dot, i) => {
+      dot.hidden = i > maxIndex;
       const active = i === index;
       dot.setAttribute('aria-selected', String(active));
       dot.className = `h-2 rounded-full ${active ? 'w-8 bg-gold-500' : 'w-2 bg-luxury-300 dark:bg-slate-600 hover:bg-luxury-400 dark:hover:bg-slate-500'}`;
@@ -793,6 +866,363 @@ function initContactForm() {
   renderCities();
 }
 
+function createTourCarousel(route, fullImage = false) {
+  if (!route.photos || route.photos.length < 2) return null;
+  const element = document.createElement('div');
+  element.className = `tour-carousel${fullImage ? ' tour-carousel-full' : ''}`;
+  element.setAttribute('role', 'region');
+  element.setAttribute('aria-roledescription', 'carousel');
+  element.setAttribute('aria-label', `${route.name} photos`);
+  element.innerHTML = `
+    <div class="tour-carousel-track">${route.photos.map((photo, index) => `<img class="tour-card-image" src="${esc(photo.src)}" alt="${esc(photo.alt)}" width="1280" height="960" loading="lazy" decoding="async" aria-hidden="${index !== 0}">`).join('')}</div>
+    <div class="tour-carousel-controls">
+      <button type="button" class="tour-icon" data-photo-prev aria-label="Previous photo" title="Previous photo">${outlineIcon('M15 18l-6-6 6-6', 'w-5 h-5')}</button>
+      <button type="button" class="tour-icon" data-photo-next aria-label="Next photo" title="Next photo">${outlineIcon('M9 18l6-6-6-6', 'w-5 h-5')}</button>
+    </div>`;
+  const track = $('.tour-carousel-track', element);
+  const images = $$('img', track);
+  let index = 0;
+  let timer;
+  let visible = false;
+
+  function showPhoto(nextIndex) {
+    index = (nextIndex + images.length) % images.length;
+    images[index].loading = 'eager';
+    track.style.transform = `translateX(-${index * 100}%)`;
+    images.forEach((image, photoIndex) => image.setAttribute('aria-hidden', String(photoIndex !== index)));
+    element.dataset.photoIndex = String(index);
+  }
+  function syncTimer() {
+    clearInterval(timer);
+    if (visible && !document.hidden) timer = setInterval(() => showPhoto(index + 1), 1800);
+  }
+  $('[data-photo-prev]', element).addEventListener('click', () => { showPhoto(index - 1); syncTimer(); });
+  $('[data-photo-next]', element).addEventListener('click', () => { showPhoto(index + 1); syncTimer(); });
+  element.addEventListener('keydown', (event) => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    showPhoto(index + (event.key === 'ArrowLeft' ? -1 : 1));
+    syncTimer();
+  });
+  let touchStart = null;
+  element.addEventListener('touchstart', (event) => { touchStart = event.touches[0].clientX; }, { passive: true });
+  element.addEventListener('touchend', (event) => {
+    if (touchStart === null) return;
+    const distance = event.changedTouches[0].clientX - touchStart;
+    if (Math.abs(distance) > 40) { showPhoto(index + (distance < 0 ? 1 : -1)); syncTimer(); }
+    touchStart = null;
+  });
+  const observer = new IntersectionObserver(([entry]) => {
+    visible = entry.isIntersecting;
+    if (visible) images.forEach((image) => { image.loading = 'eager'; });
+    syncTimer();
+  });
+  observer.observe(element);
+  document.addEventListener('visibilitychange', syncTimer);
+  showPhoto(0);
+  syncTimer();
+  return { element, destroy() { clearInterval(timer); observer.disconnect(); document.removeEventListener('visibilitychange', syncTimer); } };
+}
+
+function renderTours() {
+  const grid = $('#tour-routes');
+  TOUR_ROUTES.forEach((route, index) => {
+    const card = document.createElement('article');
+    card.className = `tour-card reveal tour-card-${route.id}`;
+    card.dataset.routeCard = route.id;
+    card.innerHTML = `
+      <div class="tour-card-body">
+        <div class="tour-card-meta"><span>Route ${String(index + 1).padStart(2, '0')}</span><span>Approx. ${route.distance} km</span></div>
+        <h3></h3>
+        <p class="tour-theme"></p>
+        <p class="tour-description"></p>
+        <button type="button" class="tour-text-action tour-open" data-tour-open="${route.id}" aria-haspopup="dialog">${route.photos ? 'View route &amp; photos' : 'View route details'} ${outlineIcon('M9 5l7 7-7 7', 'w-4 h-4')}</button>
+        <details class="tour-details">
+          <summary>Suggested stops <span>(${route.stops.length})</span></summary>
+          <ul></ul>
+          <p class="tour-customise"></p>
+        </details>
+        <button type="button" class="btn btn-outline tour-select" data-tour-select="${route.id}" aria-pressed="false" aria-controls="trip-planner"></button>
+      </div>`;
+    $('h3', card).textContent = route.name;
+    const carousel = createTourCarousel(route);
+    if (carousel) card.prepend(carousel.element);
+    $('.tour-theme', card).textContent = route.theme;
+    $('.tour-description', card).textContent = route.description;
+    $('.tour-customise', card).textContent = route.customise;
+    $('.tour-select', card).textContent = route.cta;
+    route.stops.forEach((stop) => {
+      const item = document.createElement('li');
+      item.textContent = stop;
+      $('ul', card).appendChild(item);
+    });
+    grid.appendChild(card);
+  });
+}
+
+function initTours() {
+  const planner = $('#trip-planner');
+  const stopsBox = $('#trip-stops');
+  const requests = $('#trip-requests');
+  const summary = $('#trip-summary');
+  const summaryPanel = $('#trip-summary-panel');
+  const message = $('#message');
+  const fallback = $('#form-error [data-contact-whatsapp]');
+  const destination = $('#outDestination');
+  const drafts = new Map();
+  const dialog = document.createElement('dialog');
+  dialog.className = 'tour-dialog';
+  dialog.setAttribute('aria-labelledby', 'tour-dialog-title');
+  dialog.innerHTML = `
+    <header class="tour-dialog-header">
+      <div><p class="tour-eyebrow" id="tour-dialog-meta"></p><h2 id="tour-dialog-title" tabindex="-1"></h2></div>
+      <button type="button" class="tour-icon tour-dialog-close" aria-label="Close route details" title="Close route details">${outlineIcon('M6 18L18 6M6 6l12 12', 'w-5 h-5')}</button>
+    </header>
+    <div class="tour-dialog-content">
+      <div id="tour-dialog-gallery"></div>
+      <p id="tour-dialog-description"></p>
+      <h3>Suggested places to explore</h3>
+      <ul id="tour-dialog-stops"></ul>
+      <p id="tour-dialog-customise"></p>
+      <p class="tour-dialog-notes">Distances are approximate and may vary with your pickup and customised itinerary. Stops are suggestions, not a confirmed itinerary. Toll and parking charges are payable separately.</p>
+      <div class="tours-actions">
+        <button type="button" class="btn btn-gold" id="tour-dialog-enquire">Enquire About This Route</button>
+        <button type="button" class="btn btn-outline" id="tour-dialog-customise-trip">Choose My Stops</button>
+        <a id="tour-dialog-whatsapp" class="tour-text-action" target="_blank" rel="noopener noreferrer">Continue on WhatsApp</a>
+      </div>
+    </div>`;
+  document.body.appendChild(dialog);
+  let dialogRoute = null;
+  let dialogCarousel = null;
+  let dialogOpener = null;
+  let restoreDialogFocus = true;
+  let previousOverflow = '';
+  let activeRoute = null;
+  let appliedRoute = null;
+  let generatedDestination = '';
+  const tripStart = '--- Trip selections ---';
+  const tripEnd = '--- End of trip selections ---';
+
+  function personalMessage() {
+    const start = message.value.indexOf(tripStart);
+    const end = message.value.indexOf(tripEnd, start);
+    if (start === -1 || end === -1) return message.value.trim();
+    return [message.value.slice(0, start).trim(), message.value.slice(end + tripEnd.length).trim()].filter(Boolean).join('\n\n');
+  }
+
+  function composedMessage() {
+    return [`${tripStart}\n${tripSummary()}\n${tripEnd}`, personalMessage()].filter(Boolean).join('\n\n');
+  }
+
+  function tripSummary() {
+    const draft = drafts.get(activeRoute.id);
+    const selected = activeRoute.stops.filter((stop, index) => draft.stops.has(index));
+    return [
+      `Suggested route: ${activeRoute.name}`,
+      `Preferred stops${selected.length === activeRoute.stops.length ? ' (whole suggested route)' : ''}:\n${selected.length ? selected.map((stop) => `- ${stop}`).join('\n') : 'Please help me choose stops.'}`,
+      ...(draft.requests.trim() ? [`Custom requests: ${draft.requests.trim()}`] : []),
+      `Original suggested route: approximately ${activeRoute.distance} km. Distance may vary with pickup and customisation; not recalculated for selected stops.`,
+      'Preferences only, not a confirmed itinerary. Final stops depend on travel time, time at each place and access conditions.',
+      'Toll and parking charges are payable separately and are not included in the cab fare.',
+    ].join('\n');
+  }
+
+  function whatsappLink(text) {
+    return `${WHATSAPP_URL}?text=${encodeURIComponent(`Hello, I'd like to plan a trip.\n\n${text}`)}`;
+  }
+
+  function clearAppliedTrip() {
+    message.value = personalMessage();
+    summary.value = '';
+    summary.disabled = true;
+    summaryPanel.hidden = true;
+    appliedRoute = null;
+    fallback.href = WHATSAPP_URL;
+    if (generatedDestination && destination.value === generatedDestination) destination.value = '';
+    generatedDestination = '';
+  }
+
+  function updateSelection() {
+    if (!activeRoute) return;
+    const draft = drafts.get(activeRoute.id);
+    $('#trip-selection-count').textContent = draft.stops.size
+      ? `${draft.stops.size} of ${activeRoute.stops.length} stops preferred`
+      : 'No stops selected - help me choose';
+    const text = tripSummary();
+    $('#trip-whatsapp').href = whatsappLink(composedMessage());
+    if (appliedRoute === activeRoute.id) {
+      message.value = composedMessage();
+      summary.value = text;
+      fallback.href = whatsappLink(message.value);
+    }
+  }
+
+  function applyTrip() {
+    if (!activeRoute) return;
+    $('.tab-btn[data-tab="outstation"]').click();
+    appliedRoute = activeRoute.id;
+    summary.disabled = false;
+    summaryPanel.hidden = false;
+    if (!destination.value) {
+      destination.value = activeRoute.name;
+      generatedDestination = activeRoute.name;
+    }
+    message.value = composedMessage();
+    updateSelection();
+  }
+
+  function selectRoute(nextRoute, scroll = true) {
+    if (activeRoute && activeRoute.id !== nextRoute.id) clearAppliedTrip();
+    activeRoute = nextRoute;
+    if (!drafts.has(activeRoute.id)) {
+      drafts.set(activeRoute.id, { stops: new Set(activeRoute.stops.map((stop, index) => index)), requests: '' });
+    }
+    const draft = drafts.get(activeRoute.id);
+    $$('[data-tour-select]').forEach((control) => {
+      const selected = control.dataset.tourSelect === activeRoute.id;
+      control.setAttribute('aria-pressed', String(selected));
+      control.closest('.tour-card').classList.toggle('is-selected', selected);
+    });
+    $('#trip-planner-title').textContent = activeRoute.name;
+    $('#trip-planner-copy').textContent = activeRoute.customise;
+    $('#trip-estimate').textContent = `Original suggested route: approximately ${activeRoute.distance} km. Your pickup location and customised itinerary may change this distance; this estimate is not recalculated for selected stops.`;
+    stopsBox.replaceChildren();
+    activeRoute.stops.forEach((stop, index) => {
+      const label = document.createElement('label');
+      label.className = 'trip-stop';
+      const input = document.createElement('input');
+      input.type = 'checkbox';
+      input.value = String(index);
+      input.checked = draft.stops.has(index);
+      const text = document.createElement('span');
+      text.textContent = stop;
+      label.append(input, text);
+      stopsBox.appendChild(label);
+    });
+    requests.value = draft.requests;
+    planner.hidden = false;
+    updateSelection();
+    if (scroll) {
+      $('#trip-planner-title').focus({ preventScroll: true });
+      scrollToElement(planner);
+    }
+  }
+
+  function openRouteDetails(route, card) {
+    dialogRoute = route;
+    dialogOpener = $('[data-tour-open]', card);
+    restoreDialogFocus = true;
+    $('#tour-dialog-title', dialog).textContent = route.name;
+    $('#tour-dialog-meta', dialog).textContent = `Approximately ${route.distance} km | ${route.stops.length} suggested stops`;
+    $('#tour-dialog-description', dialog).textContent = route.description;
+    $('#tour-dialog-customise', dialog).textContent = route.customise;
+    const list = $('#tour-dialog-stops', dialog);
+    list.replaceChildren();
+    route.stops.forEach((stop, index) => {
+      const item = document.createElement('li');
+      const title = document.createElement('h4');
+      title.textContent = stop;
+      const description = document.createElement('p');
+      description.textContent = route.stopDescriptions[index];
+      item.append(title, description);
+      list.appendChild(item);
+    });
+    dialogCarousel = createTourCarousel(route, true);
+    const gallery = $('#tour-dialog-gallery', dialog);
+    gallery.replaceChildren();
+    gallery.hidden = !dialogCarousel;
+    if (dialogCarousel) gallery.appendChild(dialogCarousel.element);
+    $('#tour-dialog-whatsapp', dialog).href = WHATSAPP_URL;
+    previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    dialog.showModal();
+    dialog.scrollTop = 0;
+    $('#tour-dialog-title', dialog).focus({ preventScroll: true });
+  }
+
+  $('.tour-dialog-close', dialog).addEventListener('click', () => dialog.close());
+  dialog.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') { event.preventDefault(); dialog.close(); }
+  });
+  dialog.addEventListener('click', (event) => {
+    const bounds = dialog.getBoundingClientRect();
+    if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
+  });
+  dialog.addEventListener('close', () => {
+    if (dialogCarousel) dialogCarousel.destroy();
+    dialogCarousel = null;
+    $('#tour-dialog-gallery', dialog).replaceChildren();
+    document.body.style.overflow = previousOverflow;
+    if (restoreDialogFocus && dialogOpener) dialogOpener.focus({ preventScroll: true });
+  });
+  $('#tour-dialog-enquire', dialog).addEventListener('click', () => {
+    selectRoute(dialogRoute, false);
+    applyTrip();
+    restoreDialogFocus = false;
+    dialog.close();
+    $('#message').focus({ preventScroll: true });
+    scrollToElement($('#contact-form'));
+  });
+  $('#tour-dialog-customise-trip', dialog).addEventListener('click', () => {
+    restoreDialogFocus = false;
+    dialog.close();
+    selectRoute(dialogRoute);
+  });
+  $('#tour-dialog-whatsapp', dialog).addEventListener('click', (event) => {
+    selectRoute(dialogRoute, false);
+    event.currentTarget.href = whatsappLink(composedMessage());
+    restoreDialogFocus = false;
+    dialog.close();
+  });
+  $('#tour-routes').addEventListener('click', (event) => {
+    const card = event.target.closest('[data-route-card]');
+    if (!card) return;
+    const route = TOUR_ROUTES.find((entry) => entry.id === card.dataset.routeCard);
+    if (event.target.closest('[data-tour-select]')) { selectRoute(route); return; }
+    if (event.target.closest('[data-tour-open]') || !event.target.closest('button, a, details, input')) openRouteDetails(route, card);
+  });
+
+  stopsBox.addEventListener('change', (event) => {
+    const input = event.target.closest('input[type="checkbox"]');
+    if (!input || !activeRoute) return;
+    const selected = drafts.get(activeRoute.id).stops;
+    if (input.checked) selected.add(Number(input.value));
+    else selected.delete(Number(input.value));
+    updateSelection();
+  });
+  function selectStops(selected) {
+    if (!activeRoute) return;
+    const draft = drafts.get(activeRoute.id);
+    draft.stops.clear();
+    $$('input', stopsBox).forEach((input) => {
+      input.checked = selected;
+      if (selected) draft.stops.add(Number(input.value));
+    });
+    updateSelection();
+  }
+  $('#trip-select-all').addEventListener('click', () => selectStops(true));
+  $('#trip-clear-stops').addEventListener('click', () => selectStops(false));
+  requests.addEventListener('input', () => {
+    if (!activeRoute) return;
+    drafts.get(activeRoute.id).requests = requests.value;
+    updateSelection();
+  });
+  $('#trip-enquire').addEventListener('click', applyTrip);
+  $('#trip-whatsapp').addEventListener('click', () => {
+    $('#trip-whatsapp').href = whatsappLink(composedMessage());
+  });
+  message.addEventListener('input', () => {
+    if (appliedRoute) fallback.href = whatsappLink(message.value);
+    if (activeRoute) $('#trip-whatsapp').href = whatsappLink(composedMessage());
+  });
+  $$('[data-tour-quote]').forEach((link) => link.addEventListener('click', applyTrip));
+  $('#trip-remove').addEventListener('click', () => {
+    clearAppliedTrip();
+    $('#message').focus({ preventScroll: true });
+  });
+  $('#contact-form').addEventListener('reset', clearAppliedTrip);
+}
+
 // Hero search copies its fields into the local-ride form and jumps to it.
 function initHeroSearch() {
   const search = $('#hero-search');
@@ -820,6 +1250,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderNavLinks();
   renderSocialLinks();
   renderFleet();
+  renderTours();
   renderVehicleOptions();
   renderCare();
   renderExperience();
@@ -834,6 +1265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initGallery();
   initCarousel();
   initContactForm();
+  initTours();
   initHeroSearch();
   initReveal();
   initCounters();
